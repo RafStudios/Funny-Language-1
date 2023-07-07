@@ -22,7 +22,7 @@ class FunnyLanguage
             return;
         }
 
-        string text = phrase.Substring(phrase.LastIndexOf('(') + 1, phrase.Length - phrase.LastIndexOf('(') - 2);
+        string text = phrase.Substring(phrase.IndexOf("says ") + 5);
         Console.WriteLine(text);
     }
 }
